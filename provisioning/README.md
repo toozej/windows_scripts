@@ -7,17 +7,17 @@ This set of scripts uses [Boxstarter](https://boxstarter.org/) and [Chocolatey](
 1. Removes pre-installed bloatware
 1. Configures sane settings for things like Windows Update, privacy settings, etc.
 1. Installs useful tools and applications
-1. Installs software for gaming, my primary usecase for Windows these days
+1. Installs software for gaming, my primary use-case for Windows these days
 
 ## How to use
-1. Open elevated PowerShell prompt
-1. Run: Set-ExecutionPolicy RemoteSigned
+1. Open elevated (administrator) PowerShell prompt
+1. Run: `Set-ExecutionPolicy Bypass` to temporarily disable warnings about running external scripts
 1. Get boxstarter bootstrapper
 ```powershell
 . { iwr -useb http://boxstarter.org/bootstrapper.ps1 } | iex; get-boxstarter -Force
 ```
 1. Run the entrypoint script: 
 ```powershell
-boxstarter.ps1
+.\boxstarter.ps1
 ```
-
+1. Run: `Set-ExecutionPolicy Default` to restore execution policy back to normal
