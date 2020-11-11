@@ -11,7 +11,6 @@ choco install vim -y
 choco install 7zip.install -y
 choco install windirstat -y
 choco install putty.install -y
-choco install malwarebytes -y
 choco install crystaldiskinfo.install -y
 choco install crystaldiskmark -y
 choco install rufus -y
