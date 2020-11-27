@@ -2,7 +2,6 @@
 #--- Drivers ---
 choco install msiafterburner -y
 choco install logitechgaming -y
-choco install nzxt-cam -y
 
 #--- Tools ---
 choco install cpu-z.install -y
