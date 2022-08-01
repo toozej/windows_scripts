@@ -15,6 +15,9 @@ Invoke-Item (start powershell ((Split-Path $MyInvocation.InvocationName) + "\pro
 #--- Install Windows Gaming Apps ---
 Invoke-Item (start powershell ((Split-Path $MyInvocation.InvocationName) + "\provision_windows_gaming.ps1"))
 
+#--- Install Windows Development Tools ---
+Invoke-Item (start powershell ((Split-Path $MyInvocation.InvocationName) + "\provision_windows_dev_tools.ps1"))
+
 #--- Restore Temporary Settings ---
 Enable-UAC
 Enable-MicrosoftUpdate
